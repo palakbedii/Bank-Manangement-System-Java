@@ -1,4 +1,5 @@
 import java.util.* ;
+
 class bank {
     Scanner sc = new Scanner (System.in) ;
     int age, acc_no, id_no, new_acc, initial_fixed = 10000, initial_money, withdraw_money, deposit_money, total_money ;
@@ -89,6 +90,9 @@ public class bank_mgmt {
 
             if (choice == 5)
             break ;
+
+            BankService bs = new BankService();
         }
+                    sc.close();
     }
 }
