@@ -57,9 +57,11 @@ class bank {
 public class bank_mgmt {
     public static void main(String[] args) {
         Scanner sc = new Scanner (System.in) ;
+        
         int choice ;
 
         bank ob = new bank() ;                                   //object of class
+        BankService bs = new BankService();                      // To connect to BankService.java
 
         System.out.println("ENTER YOUR PERSONAL DETAILS BELOW : ") ;
         ob.details() ;                                           //calling 'details function'
@@ -90,9 +92,7 @@ public class bank_mgmt {
 
             if (choice == 5)
             break ;
-
-            BankService bs = new BankService();
         }
-                    sc.close();
+        sc.close();
     }
 }
